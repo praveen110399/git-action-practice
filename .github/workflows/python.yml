@@ -1,0 +1,19 @@
+name: Python Test 
+on: push 
+
+jobs: 
+python-job: 
+
+  runs-on: ubuntu-latest
+ 
+  steps: 
+  - Name : acton
+  - uses: actions/checkout@v4 
+
+  - NAme: install 
+  - uses: actions/setup-python@v5 
+    with: 
+       python-version: '3.12' 
+ 
+   - name :run
+     run: python hello.py
