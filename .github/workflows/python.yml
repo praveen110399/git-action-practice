@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
  
     steps: 
-    - Name : acton
-    - uses: actions/checkout@v4 
+    - name : checkout_file
+      uses: actions/checkout@v4
 
     - name: install 
       uses: actions/setup-python@v5 
