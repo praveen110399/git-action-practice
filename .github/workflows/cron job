@@ -7,7 +7,7 @@ jobs:
   corn:
     runs-on: ubuntu-latest
 
-    stepts:
+    steps:
     - name: checkout
       uses: actions/checkout@v4 
 
@@ -16,5 +16,5 @@ jobs:
       with: 
         python-version: '3.12' 
 
-      name: file_run
+    - name: file_run
       run: python hello.py
