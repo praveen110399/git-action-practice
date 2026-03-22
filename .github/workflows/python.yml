@@ -9,7 +9,7 @@ jobs:
     - Name : acton
     - uses: actions/checkout@v4 
 
-    - NAme: install 
+    - name: install 
       uses: actions/setup-python@v5 
       with: 
         python-version: '3.12' 
