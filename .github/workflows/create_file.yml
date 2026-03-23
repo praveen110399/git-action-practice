@@ -21,6 +21,5 @@ jobs:
           script: |
             mkdir -p ~/myfolder
             echo "Hello from GitHub Actions" > ~/myfolder/myfile.txt
-            cat ~/myfolder/myfile.txt
-            rm ~/myfolder/myfile.txt
+            echo "my file" > ~/myfolder/file.txt
           debug: true
