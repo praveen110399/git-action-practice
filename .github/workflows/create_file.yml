@@ -2,7 +2,7 @@ name: create a file
 on:
   push:
     branches: 
-      - main   # change to your actual branch
+      - master   # change to your actual branch
 
 jobs:
   create:
