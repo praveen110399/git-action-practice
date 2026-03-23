@@ -1,0 +1,24 @@
+name: create a file
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: action/checkout@v3
+
+      - name: Run commadn
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            mkdir -p ~/myfolder
+            echo "Hello from GitHub Actions" > ~/myfolder/myfile.txt
+
