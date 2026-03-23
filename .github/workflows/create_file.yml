@@ -21,3 +21,4 @@ jobs:
           script: |
             mkdir -p ~/myfolder
             echo "Hello from GitHub Actions" > ~/myfolder/myfile.txt
+          debug: true
